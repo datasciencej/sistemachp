@@ -1,0 +1,66 @@
+ /* Styles for table */
+ h1 {
+    color: #CC262C;
+    text-align: center;
+    }
+    table {
+    border-collapse: collapse;
+    width: 100%;
+    }
+    th, td {
+    text-align: left;
+    padding: 8px;
+    min-width: 100px; /* Definindo tamanho mínimo para as células */
+    }
+    th {
+    background-color: #CC262C;
+    color: white;
+    }
+    tr:nth-child(even) {
+    background-color: #f2f2f2;
+    }
+
+    /* Set column widths */
+    td:nth-child(1),
+    th:nth-child(1) {
+        width: 20%;
+    }
+
+    td:nth-child(2),
+    th:nth-child(2) {
+        width: 20%;
+    }
+
+    td:nth-child(3),
+    th:nth-child(3) {
+        width: 20%;
+    }
+
+    td:nth-child(4),
+    th:nth-child(4) {
+        width: 20%;
+    }
+
+    td:nth-child(5),
+    th:nth-child(5) {
+        width: 22%;        
+    }
+
+    /* Media query for responsive table */
+    @media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    th, td {
+        border: none;
+        text-align: center;
+    }
+    th:first-child, td:first-child {
+        margin-left: 0;
+    }
+    th:last-child, td:last-child {
+        margin-right: 0;
+    }
+    }

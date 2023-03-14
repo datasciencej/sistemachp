@@ -1,0 +1,106 @@
+/* Estilos para o formulário */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 91vh;
+    background-color: #eee;
+}
+
+.login {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #6D6D6D;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #CC262C;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 3px;
+}
+
+button:hover {
+    background-color: #CC262C;
+}
+
+.Superior {
+    background-color: #CC262C;
+    height: 83px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Superior img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .Superior h2 {
+    color: white;
+    margin: 0;
+    font-size: 2em;
+  }
+
+.alinhar {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo {
+    color: #CC262C;
+}
+
+/* Regras para telas menores */
+@media screen and (max-width: 768px) {
+    #container {
+        height: auto;
+        padding: 1rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}

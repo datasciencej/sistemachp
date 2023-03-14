@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="index.css">  
+</head>
+
+<body>
+  <div class="Superior">
+    <h2>Sistema de Fretes</h2>
+    <img src="../../img/captura.png">
+  </div>
+  <div id="container">
+    <div class="titulo">
+    </div>
+    <div class="login">
+      <label for="username">Nome de usuário</label>
+      <input type="text" id="username" name="username">
+
+      <label for="password">Senha</label>
+      <input type="password" id="password" name="password">
+      <div class="alinhar">
+        <button id="btnEntrar" onclick="validarLogin()">Entrar</button>
+      </div>
+      <div class="alinhar">
+        <button id="btnCadastro" onclick="cadastro()">Cadastro</button>
+      </div>
+      <div class="alinhar" style="margin-top: 10px;">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function validarLogin() {
+      var usuario = document.getElementById("username").value;
+      var senha = document.getElementById("password").value;
+
+      if (usuario == "admin" && senha == "123") {
+        alert("Login realizado com sucesso!");
+        window.location.href = "http://localhost/arquivos/app/cadastroFrete/cadastro.php";
+      } 
+      else if (usuario == "user" && senha == "123") {
+        alert("Login realizado com sucesso!");
+        window.location.href = "http://localhost/arquivos/app/detalhesFrete/detalhes.html";
+      }else {
+        alert("Usuário ou senha inválidos.");
+      }
+    }
+    function cadastro() {
+      window.location.href = "http://localhost/arquivos/app/cadastroMotorista/cadastro.php";
+    }  
+  </script>
+</body>
+
+</html>
